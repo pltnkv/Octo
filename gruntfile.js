@@ -157,4 +157,11 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', compileTasks.concat('concurrent'))
     grunt.registerTask('compile', compileTasks)
+
+    //todo
+    // собрать сервер
+    // собрать клиент
+    // запустить отдельные вочеры клиент, сервер, статика
+    // запустить общий вочер
+
 }
