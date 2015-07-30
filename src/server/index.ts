@@ -1,3 +1,2 @@
-/**
- * Created by oleg on 29.07.15.
- */
+import commonType = require("commons/commonType")
+alert(commonType.SOME)
