@@ -46,6 +46,10 @@ module.exports = function (grunt) {
 				files: [
 					{expand: true, cwd: 'static/', src: ['**'], dest: 'target/client/'}
 				]
+			},
+			index: {
+				src: 'static/html/index.html',
+				dest: 'target/client/index.html'
 			}
 		},
 
@@ -169,7 +173,7 @@ module.exports = function (grunt) {
 
 
 	var compileDevTasks = ['clean:target',
-		'copy:static', 'stylus:compile', 'autoprefixer:make',
+		'copy:static', 'copy:index', 'stylus:compile', 'autoprefixer:make',
 		'ts:server', 'ts:client', 'requirejs:client']
 
 	//grunt.registerTask('default', compileTasks.concat('concurrent'))
